@@ -1,209 +1,202 @@
 <?php
-// Component: components/head.php
-// Data contract:
-// $heading: string
-// $sub: string|null
-// $primary: object
-// $secondary: object
+$title = $title ?? 'Ahnenerbe';
 ?>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title><?= esc($title ?? null ? $title . ": " : "") ?>Sunset Funeral Homes</title>
-
-    <!-- Default CDN includes -->
-    <!-- Google Fonts: Playfair Display + Lato (global) -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- Font Awsome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Global base typography -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title><?= esc($title) ?></title>
     <style>
         :root {
-            --sage-dark: #6F8E78;
-            --sage: #8DAA91;
-            --sage-light: #CFE6D7;
-
-            --rose-dark: #A87D79;
-            --rose: #C7A6A0;
-            --rose-light: #EDD9D6;
-
-            --stone-dark: #d6d6d6ff;
-            --stone: #aaaaaaff;
-            --stone-light: #c2c2c2ff;
+            --accent: #007bff;
+            --accent-dark: #0056b3;
+            --yellow: #ffc107;
+            --yellow-dark: #e0a800;
+            --bg: #fff8dc;
+            --btn-color: white;
+            --btn-radius: 8px;
+            --border-color: rgba(0, 0, 0, 0.12);
         }
 
-        .swatch {
-            width: 100%;
-            height: 3rem;
-            border-radius: .375rem;
-            border: 1px solid rgba(0, 0, 0, 0.06);
-        }
-
-        /* Button color utilities using design tokens */
-        .btn-sage {
-            background: var(--sage-dark);
-            color: white;
-            transition: all;
-            transition-duration: 300ms;
-        }
-
-        .btn-sage:hover {
-            background: var(--sage);
-        }
-
-        .btn-sage-dark {
-            background: var(--sage);
-            color: white;
-            transition: all;
-            transition-duration: 300ms;
-        }
-
-        .btn-sage-dark:hover {
-            background: var(--sage-dark);
-        }
-
-        .btn-rose {
-            background: var(--rose-dark);
-            color: white;
-            transition: all;
-            transition-duration: 300ms;
-        }
-
-        .btn-rose:hover {
-            background: var(--rose);
-        }
-
-        .btn-rose-dark {
-            background: var(--rose);
-            color: white;
-            transition: all;
-            transition-duration: 300ms;
-        }
-
-        .btn-rose-dark:hover {
-            background: var(--rose-dark);
-        }
-
-        .btn-border {
-            border-color: var(--rose);
-            border-width: 2px;
-            color: var(--rose);
-            font-weight: 600;
-            transition: all;
-            transition-duration: 300ms;
-        }
-
-        .btn-border:hover {
-            color: white;
-            background: var(--rose);
-        }
-
-        .btn-border-dark {
-            border-color: var(--rose-dark);
-            border-width: 2px;
-            color: var(--rose-dark);
-            font-weight: 600;
-            transition: all;
-            transition-duration: 300ms;
-        }
-
-        .btn-border-dark:hover {
-            color: white;
-            background: var(--rose-dark);
-        }
-
-        .btn-disabled {
-            background-color: var(--stone);
-            color: white;
-            cursor: not-allowed;
-        }
-
-        /* Header CTA uses the main accent (sage-dark) */
-        .header-cta {
-            background: var(--sage-dark);
-            color: white;
-        }
-
-        .header-cta:hover {
-            background: var(--sage);
-        }
-
-        /* Small token-driven utilities */
-        .text-sage-dark {
-            color: var(--sage-dark);
-        }
-
-        .text-sage {
-            color: var(--sage);
-        }
-
-        .bg-sage-light {
-            background: var(--sage-light);
-        }
-
-        .bg-sage {
-            background: var(--sage);
-        }
-
-        .bg-sage-dark {
-            background: var(--sage-dark);
-        }
-
-        .bg-stone-light {
-            background: var(--stone-light);
-        }
-
-        /* Custom scrollbar styling using sage-light token (#CFE6D7) */
-        /* WebKit-based browsers */
-        ::-webkit-scrollbar {
-            width: 12px;
-            height: 12px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: var(--sage-light);
-            border-radius: 8px;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: linear-gradient(180deg, var(--sage) 0%, var(--sage-dark) 100%);
-            border-radius: 8px;
-            border: 3px solid rgba(0, 0, 0, 0.03);
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(180deg, var(--sage-dark) 0%, var(--sage) 100%);
-        }
-
-        /* Firefox */
         * {
-            scrollbar-width: thin;
-            scrollbar-color: var(--sage-dark) var(--sage-light);
+            box-sizing: border-box;
         }
 
-        /* Utility class to apply custom scrollbars to specific containers */
-        .custom-scroll {
-            overflow: auto;
-        }
-
-        /* Base typography */
         html,
         body {
-            font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+            height: 100%;
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5 {
-            font-family: 'Playfair Display', Georgia, serif;
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: var(--bg);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            color: #222;
+        }
+
+        /* Header styles */
+        header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 16px;
+            gap: 12px;
+            border-bottom: 2px solid var(--border-color);
+            background: white;
+            position: relative;
+        }
+
+        .header-title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .logo-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 6px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: white;
+            height: 48px;
+            min-width: 48px;
+        }
+
+        .logo-box img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .top-right {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .btn {
+            border: none;
+            padding: 8px 14px;
+            border-radius: var(--btn-radius);
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background .18s ease, transform .06s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+        }
+
+        .btn-yellow {
+            background: var(--yellow);
+            color: black;
+        }
+
+        .btn-yellow:hover {
+            background: var(--yellow-dark);
+        }
+
+        .btn-blue {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-blue:hover {
+            background: var(--accent-dark);
+        }
+
+        /* Bottom bar + footer label */
+        .bottom-right {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 12px 16px;
+            border-top: 2px solid var(--border-color);
+            background: white;
+            width: 100%;
+            justify-content: flex-end;
+        }
+
+        .footer-title {
+            position: absolute;
+            left: 50%;
+            bottom: 12px;
+            transform: translateX(-50%);
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Center panel */
+        .center-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 60px;
+            border: 3px solid var(--border-color);
+            padding: 20px;
+            border-radius: 12px;
+            background: white;
+            max-width: 480px;
+            margin-left: 120px;
+        }
+
+        .center-image img {
+            width: 420px;
+            transform: translate(0px, 10px);
+            border-radius: 8px;
+        }
+
+        .weapon-text {
+            margin-top: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        @media (max-width:640px) {
+            .btn {
+                padding: 7px 10px;
+                font-size: 13px;
+            }
+
+            .logo-box img {
+                width: 36px;
+                height: 36px;
+            }
+
+            .center-image {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .center-image img {
+                width: 260px;
+                transform: translate(0px, 8px);
+            }
+
+            .weapon-text {
+                font-size: 20px;
+                margin-top: 15px;
+            }
         }
     </style>
 </head>
+
+<body>
