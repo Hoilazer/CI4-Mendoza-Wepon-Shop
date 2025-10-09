@@ -54,10 +54,10 @@ Weapons for everyone
 
 ## Overview
 
-Wepon shop offers an assortments of weapon to you delivered by a cat in style! with easy access for online servis!
+Wepon shop offers an assortments of weapon to you delivered by a cat in style! with easy access for online service!
 
-* **Purpose**: a clean starting point for CI4 apps.
-* **Audience**: developers who want a predictable structure and quick onboarding.
+* **Purpose**: provide weapons to people nya!
+* **Audience**: people who love to use it for self defense
 
 ### Key Components
 
