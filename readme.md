@@ -5,7 +5,7 @@
 
 <div align="center">
   <a href="https://github.com/Hoilazer/CI4-Mendoza-Wepon-Shop">
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="https://i.pinimg.com/originals/b6/bb/d8/b6bbd8f89dc35817f95cd6c171f09394.jpg" alt="Img" width="130" height="100">
   </a>
 <!-- * Title Section -->
   <h3 align="center">CI4-Mendoza-Wepon-Shop</h3>
@@ -18,7 +18,7 @@ Weapons for everyone
 
 <br/>
 
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/ci4-template)
+![](https://github.com/Hoilazer/CI4-Mendoza-Wepon-Shop)
 
 <!-- ! Make sure it was similar to your github -->
 
@@ -222,6 +222,4 @@ AD-ProjectName/
 | YouTube “UI/UX Design”  | Video tutorials on modern web interface layouts and patterns.         | [https://www.youtube.com](https://www.youtube.com)                         |
 | Pinterest Design Boards | Inspiration for color schemes, typography, and component layouts.     | [https://www.pinterest.com](https://www.pinterest.com)                     |
 | Google Photos (Assets)  | Stock imagery and graphics used in UI mockups and documentation.      | [https://photos.google.com](https://photos.google.com)                     |
-| System Documentation    | Internal docs from PHP, MongoDB, and PostgreSQL used in development.  | — (see `/docs` folder in repo)                                             |
-
 <!-- ! Add what tools aided you -->
