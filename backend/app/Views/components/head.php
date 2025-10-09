@@ -257,7 +257,6 @@ $title = $title ?? 'Ahnenerbe';
             font-weight: bold;
         }
 
-        /* Logos */
         .logo-container {
             display: flex;
             justify-content: center;
@@ -661,6 +660,115 @@ $title = $title ?? 'Ahnenerbe';
             width: 100%;
             padding: 10px;
             margin-top: 10px;
+        }
+
+        /* Moodboard Card Image Variants */
+        /* Moodboard Cards */
+        .moodboard-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .moodboard-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .moodboard-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .moodboard-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .moodboard-card .card-img-semi {
+            width: 50%;
+            height: auto;
+            border-radius: 6px;
+            margin: 12px 0;
+        }
+
+        .moodboard-card .card-img-full {
+            width: 100%;
+            height: 140px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .moodboard-card .card-img-whole {
+            width: 100%;
+            height: 250px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+        }
+
+        .moodboard-card p {
+            font-weight: 700;
+            font-size: 15px;
+            text-align: center;
+            margin: 8px 12px 12px 12px;
+        }
+
+        /* Logos */
+        .moodboard-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 24px;
+        }
+
+        .logo-circle,
+        .logo-square {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 80px;
+            height: 80px;
+            border: 2px solid #ddd;
+            background: #fff;
+        }
+
+        .logo-circle {
+            border-radius: 50%;
+        }
+
+        .logo-square {
+            border-radius: 8px;
+        }
+
+        .logo-circle img,
+        .logo-square img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .moodboard-card {
+                width: 180px;
+            }
+
+            .logo-circle,
+            .logo-square {
+                width: 60px;
+                height: 60px;
+            }
         }
     </style>
 </head>

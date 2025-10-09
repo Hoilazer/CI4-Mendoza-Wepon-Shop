@@ -28,32 +28,39 @@
         </div>
         </section>
 
-        <section aria-labelledby="cards">
-            <h2 id="cards" class="title">Card Sample</h2>
-            <div class="card-container">
-                <div class="card">
-                    <img src="https://i.pinimg.com/736x/f1/0f/f7/f10ff70a7155e5ab666bcdd1b45b726d.jpg" alt="Card 1" class="card-img">
-                    <p>"Wow the weapon is so great!"</p>
+        <section id="moodboard-cards">
+            <h2 class="title">Cards</h2>
+            <div class="moodboard-cards">
+                <div class="moodboard-card">
+                    <img src="https://i.ytimg.com/vi/BK9a3Ir6iZs/maxresdefault.jpg" class="card-img-semi" alt="Card 1">
+                    <p>Snall</p>
                 </div>
-                <div class="card">
-                    <img src="https://www.tmdict.com/legacy/src/img/baa_neco-arc-chaos_w.png" alt="Card 2" class="card-img">
-                    <p>"Beams are unisex"</p>
+                <div class="moodboard-card">
+                    <img src="https://preview.redd.it/xnooyirve6w21.jpg?auto=webp&s=176c63bc61224f1b16fd9262ad434e15f66d17ed" class="card-img-full" alt="Card 2">
+                    <p>Semi</p>
                 </div>
-                <div class="card">
-                    <img src="https://i.ytimg.com/vi/e8kiBbpPQUE/mqdefault.jpg" alt="Card 3" class="card-img">
-                    <p>"This is a cat cafe not a fighting place"</p>
+                <div class="moodboard-card">
+                    <img src="https://preview.redd.it/damm-why-is-this-cat-so-cute-v0-ixteige4pq3a1.jpg?width=1080&crop=smart&auto=webp&s=d8ed36f41d146307d6ee8ccf98924cd3ae390887" class="card-img-whole" alt="Card 3">
+                    <p>Full</p>
                 </div>
             </div>
         </section>
 
-        <section aria-labelledby="logos">
-            <h2 id="logos" class="title">Logos</h2>
+        <section id="logos">
+            <h2 class="title">Logos</h2>
             <div class="logo-container">
-                <div class="logo-circle"><img src="https://media.tenor.com/SR6-Ok4MJZ8AAAAe/neco-arc-gun.png" alt="Logo 1"></div>
-                <div class="logo-circle"><img src="https://i.pinimg.com/236x/2a/28/70/2a2870d8210860e7580475a758ae3e2f.jpg" alt="Logo 2"></div>
-                <div class="logo-circle"><img src="https://i.pinimg.com/236x/33/12/e3/3312e3b7f441afcf8b861d125823c49b.jpg" alt="Logo 3"></div>
+                <div class="logo-circle">
+                    <img src="https://media.tenor.com/SR6-Ok4MJZ8AAAAe/neco-arc-gun.png" alt="Logo 1">
+                </div>
+                <div class="logo-square">
+                    <img src="https://i.pinimg.com/236x/2a/28/70/2a2870d8210860e7580475a758ae3e2f.jpg" alt="Logo 2">
+                </div>
+                <div class="logo-circle">
+                    <img src="https://i.pinimg.com/236x/33/12/e3/3312e3b7f441afcf8b861d125823c49b.jpg" alt="Logo 3">
+                </div>
             </div>
         </section>
+
 </main>
 
 <?= view('components/footer') ?>
