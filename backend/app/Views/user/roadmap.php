@@ -2,14 +2,30 @@
 <?= view('components/header', ['title' => 'Ahnenerbe']) ?>
 
 <main class="container" style="padding:24px;">
-
-    <section class="box" aria-labelledby="planned">
+    <section aria-labelledby="planned">
         <h2 id="planned">Planned to implement</h2>
-        <ul>
-            <li>Customer Service Button</li>
-            <li>Admin Page</li>
-            <li>Item List</li>
-        </ul>
+        <div class="roadmap-container">
+            <div class="roadmap-card">
+                <div class="roadmap-number">1</div>
+                <div class="roadmap-content">Customer Service Button</div>
+            </div>
+            <div class="roadmap-card">
+                <div class="roadmap-number">2</div>
+                <div class="roadmap-content">Admin Page</div>
+            </div>
+            <div class="roadmap-card">
+                <div class="roadmap-number">3</div>
+                <div class="roadmap-content">Item List</div>
+            </div>
+            <div class="roadmap-card">
+                <div class="roadmap-number">4</div>
+                <div class="roadmap-content">Accounts</div>
+            </div>
+            <div class="roadmap-card">
+                <div class="roadmap-number">5</div>
+                <div class="roadmap-content">Store Page</div>
+            </div>
+        </div>
     </section>
 </main>
 

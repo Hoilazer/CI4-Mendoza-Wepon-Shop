@@ -14,9 +14,9 @@ $title = $title ?? 'Ahnenerbe';
 
     <div class="header-title"><?= esc($title) ?></div>
 
-    <div class="header-left" role="img" aria-label="Logo" onclick="location.href='/'" style="cursor:pointer;">
+    <div class="header-left" role="img" aria-label="Logo">
         <div class="logo-box">
-            <img src="https://media.tenor.com/SR6-Ok4MJZ8AAAAe/neco-arc-gun.png" alt="Logo">
+            <img src="https://preview.redd.it/ive-just-found-this-neco-arc-modified-bear-edit-i-love-it-v0-iqqwz407849b1.jpg?auto=webp&s=3a40451577e8379008647cb3bf39c9dd286bcf75" alt="Logo">
         </div>
     </div>
 </header>
