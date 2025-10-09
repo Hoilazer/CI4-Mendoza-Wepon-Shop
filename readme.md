@@ -65,11 +65,11 @@ These are **sample modules** included (or suggested) for learning how to add fea
 
 | Component                 | Purpose                                                             | Notes                                                   |
 | ------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------- |
-| **Button**         | For buttons for the page     |
-| **footer**           | For the bottom of the page |
-| **head**    | CSS for the page |
-| **header**         | For the top of the page |
-| **cta**           | Message of the page |
+| **Button**         | For buttons for the page     | it changes the color |
+| **footer**           | For the bottom of the page | it changes the footer design |
+| **head**    | CSS for the page | it changes the overall design and adds functions |
+| **header**         | For the top of the page | it changes the header design |
+| **cta**           | Message of the page | shows the message |
 
  <!-- ! Start simple. Use these modules as **learning samples**; extend or replace them based on your project’s needs. -->
 
