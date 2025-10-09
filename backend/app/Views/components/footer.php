@@ -1,10 +1,9 @@
-<?php
-?>
-<footer role="contentinfo" aria-label="Site Footer">
-    <?= view('components/button') ?>
-
-    <div class="footer-title">Neco Arc Industries 2025</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-title">©Neco Arc Industries 2025</div>
+        <div class="bottom-right">
+            <?= button('Moodboard', '/moodboard', 'secondary') ?>
+            <?= button('Roadmap', '/roadmap', 'secondary') ?>
+        </div>
+    </div>
 </footer>
-</body>
-
-</html>

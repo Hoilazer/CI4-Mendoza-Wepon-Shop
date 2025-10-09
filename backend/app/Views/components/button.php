@@ -1,21 +1,23 @@
 <?php
+if (!function_exists('button')) {
+    function button($btnText, $btnLink = '#', $btnType = 'primary')
+    {
+        switch (strtolower($btnType)) {
+            case 'primary':
+                $colorClass = 'btn-yellow';
+                break;
+            case 'secondary':
+                $colorClass = 'btn-blue';
+                break;
+            case 'tertiary':
+                $colorClass = 'btn-gray';
+                break;
+            case 'disabled':
+                return "<button class='btn btn-gray' disabled>$btnText</button>";
+            default:
+                $colorClass = 'btn-gray';
+        }
 
-function primaryButton($btnText, $btnLink, $divClass = '')
-{
-    $btnHtml = "<button class=\"btn btn-yellow\" onclick=\"location.href='$btnLink'\">$btnText</button>";
-    return $divClass ? "<div class=\"$divClass\">$btnHtml</div>" : $btnHtml;
+        return "<button class='btn $colorClass' onclick=\"location.href='$btnLink'\">$btnText</button>";
+    }
 }
-
-function secondaryButton($btnText, $btnLink, $divClass = '')
-{
-    $btnHtml = "<button class=\"btn btn-blue\" onclick=\"location.href='$btnLink'\">$btnText</button>";
-    return $divClass ? "<div class=\"$divClass\">$btnHtml</div>" : $btnHtml;
-}
-?>
-
-<?= primaryButton('Home', '/', 'top-right') ?>
-<?= primaryButton('Login', '/login', 'top-right') ?>
-<?= primaryButton('Signup', '/signup', 'top-right') ?>
-
-<?= secondaryButton('Moodboard', '/moodboard', 'bottom-right') ?>
-<?= secondaryButton('Roadmap', '/roadmap', 'bottom-right') ?>
