@@ -10,7 +10,7 @@ if (!function_exists('button')) {
                 $colorClass = 'btn-blue';
                 break;
             case 'tertiary':
-                $colorClass = 'btn-gray';
+                $colorClass = 'btn-purple'; // changed from btn-gray to btn-purple
                 break;
             case 'disabled':
                 return "<button class='btn btn-gray' disabled>$btnText</button>";
