@@ -8,7 +8,7 @@
     <img src="https://i.pinimg.com/originals/b6/bb/d8/b6bbd8f89dc35817f95cd6c171f09394.jpg" alt="Img" width="130" height="100">
   </a>
 <!-- * Title Section -->
-  <h3 align="center">CI4-Mendoza-Wepon-Shop</h3>
+  <h3 align="center">AD-Mendoza-Wepon-Shop</h3>
 </div>
 
 <!-- * Description Section -->
@@ -211,8 +211,5 @@ AD-ProjectName/
 | Title                   | Purpose                                                               | Link                                                                       |
 | ----------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | ChatGPT                 | General AI assistance for planning application architecture and docs. | [https://chat.openai.com](https://chat.openai.com)                         |
-| GitHub Copilot          | In-IDE code suggestions and boilerplate generation.                   | [https://github.com/features/copilot](https://github.com/features/copilot) |
-| YouTube “UI/UX Design”  | Video tutorials on modern web interface layouts and patterns.         | [https://www.youtube.com](https://www.youtube.com)                         |
-| Pinterest Design Boards | Inspiration for color schemes, typography, and component layouts.     | [https://www.pinterest.com](https://www.pinterest.com)                     |
 | Google Photos (Assets)  | Stock imagery and graphics used in UI mockups and documentation.      | [https://photos.google.com](https://photos.google.com)                     |
 <!-- ! Add what tools aided you -->
