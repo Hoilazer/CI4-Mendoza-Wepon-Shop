@@ -87,38 +87,6 @@ $title = $title ?? 'Ahnenerbe';
             align-items: center;
         }
 
-        .btn {
-            border: none;
-            padding: 8px 14px;
-            border-radius: var(--btn-radius);
-            font-weight: 700;
-            cursor: pointer;
-            font-size: 14px;
-            transition: background .18s ease, transform .06s ease;
-        }
-
-        .btn:hover {
-            transform: translateY(-1px);
-        }
-
-        .btn-yellow {
-            background: var(--yellow);
-            color: black;
-        }
-
-        .btn-yellow:hover {
-            background: var(--yellow-dark);
-        }
-
-        .btn-blue {
-            background: var(--accent);
-            color: white;
-        }
-
-        .btn-blue:hover {
-            background: var(--accent-dark);
-        }
-
         /* Bottom bar + footer label */
         .bottom-right {
             position: fixed;
@@ -171,11 +139,6 @@ $title = $title ?? 'Ahnenerbe';
         }
 
         @media (max-width:640px) {
-            .btn {
-                padding: 7px 10px;
-                font-size: 13px;
-            }
-
             .logo-box img {
                 width: 36px;
                 height: 36px;
